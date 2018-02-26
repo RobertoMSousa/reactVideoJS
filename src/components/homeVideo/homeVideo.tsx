@@ -1,6 +1,7 @@
 
 import * as React from 'react';
 import * as videojs from 'video.js';
+import swal from 'sweetalert';
 
 // components
 
@@ -35,6 +36,28 @@ class HomeVideo extends React.Component <any, any> {
 		// start the video player
 		player = videojs(videoObj, videoJsOptions,  function onPlayerReady() {
 			player.poster('http://vjs.zencdn.net/v/oceans.png');
+			player.on('ended', () => {
+				swal({
+						title: 'Join us today!',
+						text: 'Don\'t miss any other videos, join us!',
+						content: {
+							element: 'input',
+							attributes: {
+								placeholder: 'Type your email',
+								type: 'email',
+							},
+						},
+						buttons: {
+							submit: {
+								text: 'Submit',
+								value: null,
+								visible: true,
+								className: '',
+								closeModal: true,
+							}
+						}
+					});
+			});
 		});
 	}
 
