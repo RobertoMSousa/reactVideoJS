@@ -1,0 +1,22 @@
+.App-header {
+	background-color: var(--dark);
+	height: 100px;
+	color: var(--white);
+	display: grid;
+	grid-template-areas: "applogo apptitle";
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.App-title {
+	grid-area: apptitle;
+	align-self: center;
+	justify-self: left;
+}
+  
+.App-logo {
+	height: 50px;
+	grid-area: applogo;
+	align-self: center;
+	justify-self: right;
+}
