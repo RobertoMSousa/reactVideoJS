@@ -23,26 +23,22 @@
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
-	color: var(--white);
-}
-
-.formStyle input, select, textarea ::-webkit-input-placeholder {
-    opacity: 0;
+	color: var(--dark);
 }
 
 .formStyle ::-webkit-input-placeholder{
-	color: var(--white);
+	color: var(--dark);
 }
 .formStyle ::-moz-placeholder{
-	color: var(--white);
+	color: var(--dark);
 }
 
 .formStyle :-ms-input-placeholder {
-	color: var(--white);
+	color: var(--dark);
 }
 
 .formStyle :-moz-placeholder {
-	color: var(--white);
+	color: var(--dark);
 }
 
 
