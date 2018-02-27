@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-
+import { Link } from 'react-router-dom';
 // components
 
 // css files
@@ -12,9 +12,9 @@ class JoinUs extends React.Component <any, any> {
 
 	render() {
 		return (
-			<div className="center joinUsButton noSelect">
+			<Link to="/signup" className="center joinUsButton noSelect remove_link_style">
 				<span className="joinUsText center">Join us for more!</span>
-			</div>
+			</Link>
 		);
 	}
 }
