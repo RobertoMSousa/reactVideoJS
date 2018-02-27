@@ -18,7 +18,7 @@ class Home extends React.Component <any, any> {
 		return (
 			<div>
 				<TopBar/>
-				<div className="homeMainWrapper">
+				<div className="mainWrapper">
 					<HomeVideo className="homeMainVideo"/>
 					<JoinUs className="homeMainJoin"/>
 				</div>

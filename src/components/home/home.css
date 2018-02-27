@@ -1,11 +1,12 @@
 
-.homeMainWrapper {
+.mainWrapper {
 	height: calc(100vh - 100px);
 	display: grid;
 	grid-template-areas: "homeMainVideo"
 						"homeMainJoin";
 	grid-template-rows: 2fr 1fr;
 	grid-template-columns: 1fr;
+	background-color: var(--background-color);
 }
 
 .homeMainVideo {
