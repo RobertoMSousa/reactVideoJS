@@ -6,6 +6,7 @@
     box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.5);
     border: solid 2px #131834;
     text-align: center;
+    cursor: pointer;
 }
 
 

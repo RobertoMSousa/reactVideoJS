@@ -3,9 +3,9 @@
 	height: 100px;
 	color: var(--white);
 	display: grid;
-	grid-template-areas: "applogo apptitle";
+	grid-template-areas: "applogo apptitle loginbutton";
 	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 5fr 5fr 1fr;
 }
 
 .App-title {
@@ -13,10 +13,27 @@
 	align-self: center;
 	justify-self: left;
 }
+.App-title span {
+	font-size: 30px;
+	font-family: var(--font);
+}
   
 .App-logo {
-	height: 50px;
 	grid-area: applogo;
 	align-self: center;
 	justify-self: right;
+	height: 50px;
+}
+.App-logo img {
+	height: 50px;
+}
+
+.login-button {
+	grid-area: loginbutton;
+	height: 50px;
+	cursor: pointer;
+}
+.login-button img {
+	height: 50px;
+	cursor: pointer;
 }
