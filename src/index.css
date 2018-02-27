@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 
 :root {
-	--lipstick: #e1151c;
 	--white: #fff;
 	--red: #C1071E;
 	--light-grey: #DEDEDE;
 	--dark-grey: #43465E;
 	--dark: #131854;
---font: 'Lato', sans-serif;
+	--background-color: rgba(67, 70, 95, 0.5);
+	--font: 'Lato', sans-serif;
 }
 
 body {
@@ -38,4 +38,9 @@ body {
 
 .indexMainContainer {
   height: 100vh;
+}
+
+.remove_link_style {
+	text-decoration: inherit;
+	color: inherit;
 }

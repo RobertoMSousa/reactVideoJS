@@ -1,34 +1,12 @@
-.App-header {
-	background-color: #222;
-	height: 100px;
-	color: white;
-	display: grid;
-	grid-template-areas: "applogo apptitle";
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr;
-}
 
-.App-title {
-	grid-area: apptitle;
-	align-self: center;
-	justify-self: left;
-}
-  
-.App-logo {
-	height: 50px;
-	grid-area: applogo;
-	align-self: center;
-	justify-self: right;
-}
-
-
-.homeMainWrapper {
+.mainWrapper {
 	height: calc(100vh - 100px);
 	display: grid;
 	grid-template-areas: "homeMainVideo"
 						"homeMainJoin";
 	grid-template-rows: 2fr 1fr;
 	grid-template-columns: 1fr;
+	background-color: var(--background-color);
 }
 
 .homeMainVideo {

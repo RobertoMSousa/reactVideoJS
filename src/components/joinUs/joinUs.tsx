@@ -12,7 +12,7 @@ class JoinUs extends React.Component <any, any> {
 
 	render() {
 		return (
-			<div className="center joinUsButton">
+			<div className="center joinUsButton noSelect">
 				<span className="joinUsText center">Join us for more!</span>
 			</div>
 		);
