@@ -7,6 +7,8 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 // components import 
 // import App from './App';
 import Home from './components/home/home';
+import SignIn from './components/signIn/signIn';
+import SignUp from './components/signIn/signUp';
 
 // class
 class Routes extends React.Component <any, any> {
@@ -24,6 +26,8 @@ class Routes extends React.Component <any, any> {
 					<Switch>
 						<Route exact={true} path="/" component={Home}/>
 						<Route path="/home" component={Home}/>
+						<Route path="/signin" component={SignIn}/>
+						<Route path="/signup" component={SignUp}/>
 					</Switch>
 				</BrowserRouter>
 			</div >
