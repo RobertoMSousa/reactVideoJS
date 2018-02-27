@@ -4,7 +4,7 @@ import { Link }  from 'react-router-dom';
 
 // components
 import TopBar from '../topBar/topBar';
-// import TextArea from '../textArea/textArea';
+import TextArea from '../textArea/textArea';
 
 // css files
 import './auth.css';
@@ -22,29 +22,20 @@ class Home extends React.Component <any, any> {
 		};
 		this.handleEmail = this.handleEmail.bind(this);
 		this.hanglePassword = this.hanglePassword.bind(this);
-		this.handleForgot = this.handleForgot.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 	hanglePassword(password: string) {
-		// this.setState({ password: password });
+		this.setState({ password: password });
 	}
 
 	handleEmail(email: string) {
-		// this.setState({ email: email });
-	}
-
-	handleForgot() {
-		/*
-		TODO:
-		*/
+		this.setState({ email: email });
 	}
 
 	handleSubmit() {
-		// if (!isEmail(this.state.email)) {
-		// 	swal('Uppps!', 'The email is not valid!', 'error');
-		// } else {
-		// 	this.props.dispatch(signin_user(this.state.email, this.state.password));
-		// }
+		/*
+		TODO:
+		*/
 	}
 
 	render() {
@@ -64,7 +55,15 @@ class Home extends React.Component <any, any> {
 							</div>
 						</div>
 						<div className="signInForm">
-							<h1>signin</h1>
+							<div className="signinContainerBottomEmail">
+								<TextArea placeholder="email" callbackFromParent={this.handleEmail} backgroundColor="rgba(0, 0, 0, 0)"/>
+							</div>
+							<div className="signinContainerBottomPassword">
+								<TextArea placeholder="password" callbackFromParent={this.hanglePassword} backgroundColor="rgba(65, 36, 36, 0)"/>
+							</div>
+							<div className="signinContainerBottomLoginButton" onClick={this.handleSubmit}>
+								<span>Sign In</span>
+							</div>
 						</div>
 					</div>
 				</div>
