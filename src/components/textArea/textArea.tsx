@@ -19,10 +19,6 @@ class TextArea extends React.Component <any, any> {
 		this.props.callbackFromParent(event.target.value);
 	}
 
-	componentDidMount() {
-		console.log('props-->', this.props); // roberto
-	} 
-
 	render() {
 		return (
 			<form className="formStyle">
