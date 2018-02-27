@@ -1,0 +1,63 @@
+.signinContainer {
+    display: grid;
+    grid-template-areas: "signInNavigation"
+						"signInForm";
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
+    height: 700px;
+	width: 500px;
+	margin: 0 auto;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+.signInForm, .signUpForm {
+    background-color: var(--dark);
+    grid-area: signInForm;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.signInNavigation {
+    background-color: var(--dark);
+    grid-area: signInNavigation;
+    width: 100%;
+    height: 100%;
+	display: grid;
+	grid-template-areas: "signinContainerTopNavigationLeft signinContainerTopNavigationRight";
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.signinContainerTopNavigationLeft {
+	grid-area: signinContainerTopNavigationLeft;
+	font-family: var(--font);
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+    color: var(--light-grey);
+    line-height: 25px;
+}
+
+.signinContainerTopNavigationLeft.selected {
+	color: var(--red);
+}
+.signinContainerTopNavigationRight.selected {
+	color: var(--red);
+}
+
+.signinContainerTopNavigationRight {
+	grid-area: signinContainerTopNavigationRight;
+	font-family: var(--font);
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+    color: var(--light-grey);
+    line-height: 25px;
+}
