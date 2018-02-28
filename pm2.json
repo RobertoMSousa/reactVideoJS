@@ -1,0 +1,37 @@
+ {
+    "apps" : [
+      {
+        "name": "reactVideoJS-server-1",
+        "script": "server.js",
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": 4000
+        }
+      },
+      {
+        "name": "reactVideoJS-server-2",
+        "script": "server.js",
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": 4001
+        }
+      },
+      {
+        "name": "reactVideoJS-server-3",
+        "script": "server.js",
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": 4002
+        }
+      },
+      {
+        "name": "reactVideoJS-staging",
+        "script": "server.js",
+        "env": {
+          "NODE_ENV": "staging",
+          "PORT": 5000
+        }
+      }
+    ]
+}
+  
