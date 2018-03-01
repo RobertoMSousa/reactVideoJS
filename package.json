@@ -1,5 +1,5 @@
 {
-  "name": "not_videojs",
+  "name": "react_video_js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "docker": "docker build . -t not_videojs"
+    "docker": "docker build . -t reactVideoJS"
   },
   "devDependencies": {
     "@types/jest": "^21.1.8",
