@@ -13,6 +13,6 @@ const express = require('express');
   app.listen(
     process.env.PORT || 5000,
     function () {
-      console.log(`Frontend start on http://localhost:5000`)
+      console.log('app running on port on', process.env.PORT || 5000, );
     }
   );
